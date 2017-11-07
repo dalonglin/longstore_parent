@@ -5,7 +5,7 @@
 	<groupId>com.longstore</groupId>
 	<artifactId>parent</artifactId>
 	<packaging>pom</packaging>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>parent</name>
 	<url>http://maven.apache.org</url>
 	
@@ -22,12 +22,12 @@
 			<dependency>
 				<groupId>com.longstore</groupId>
 				<artifactId>ls-common</artifactId>
-				<version>1.0.0-SNAPSHOT</version>
+				<version>1.0.0</version>
 			</dependency>
 			<dependency>
 				<groupId>com.longstore</groupId>
 				<artifactId>ls-entity</artifactId>
-				<version>1.0.0-SNAPSHOT</version>
+				<version>1.0.0</version>
 			</dependency>
 			<!-- spring -->
 			<dependency>
@@ -412,28 +412,9 @@
 				<artifactId>qrgen</artifactId>
 				<version>1.4</version>
 			</dependency>
-			<!-- fastdfs -->
-			<dependency>
-				<groupId>org.csource</groupId>
-				<artifactId>fastdfs-client-java</artifactId>
-				<version>1.27-SNAPSHOT</version>
-			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	
-	<distributionManagement>
-		<repository>
-			<id>nexus-releases</id>
-			<name>Internal Releases</name>
-			<url>http://192.168.5.103:9002/nexus/content/repositories/releases</url>
-		</repository>
-		<snapshotRepository>
-			<id>nexus-snapshots</id>
-			<name>Internal snapshots</name>
-			<url>http://192.168.5.103:9002/nexus/content/repositories/snapshots</url>
-		</snapshotRepository>
-	</distributionManagement>
-	
+		
 	<build>
 		<plugins>
 			<plugin>
